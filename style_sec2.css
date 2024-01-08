@@ -1,0 +1,110 @@
+/* Layout */
+#section2 {
+  height: 700px;
+  position: relative;
+  max-width: 1000px; /* Ersetzen Sie 1000px durch die gewünschte maximale Breite */
+  margin: auto;
+  left: 50px;
+}
+
+#sec2Image {
+  position: absolute;
+  top: 350px;
+  right: 100px;
+  transform: translateY(-50%);
+  width: 600px;
+}
+
+/* Typography */
+
+
+#colorText {
+  font-size: var(--main-font-size);
+  color: #292929;
+  margin-left: -20px;
+  margin-top: 330px;
+}
+
+#sec2h2 {
+  font-size: 12px;
+  color: #555;
+  font-weight: lighter;
+}
+
+/* Buttons */
+#section2 #button {
+  position: absolute;
+  left: -20px;
+  background-color: rgb(0, 0, 0);
+  border-radius: var(--button-radius);
+  width: var(--button-width);
+  height: var(--button-height);
+  border-style: bold;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  line-height: var(--button-height);
+  top: 450px;
+  color: white;
+}
+
+
+
+#section2 #button:hover {
+  background-color: #555;
+}
+
+/* Icons */
+.Icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 200px;
+  margin-top: 30%; 
+}
+
+.Icons img {
+  width: 200px; 
+  height: 200px; 
+}
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Other */
+#sec2h2, .color-container {
+  position: relative;
+  left: -20px; 
+  top: 300px;
+}
+.color-container {
+  display: flex;
+  justify-content: unset;
+  flex-wrap: wrap;
+  
+}
+
+.color-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.color-circle.active {
+  transform: scale(1.5);
+}
+
+#offerForm{
+  display: none;
+  position: absolute;
+  top: 15%; left: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: white;
+  padding: 50px; 
+  border: 1px solid black;
+  width: 300px;
+  height: 120px;
+}

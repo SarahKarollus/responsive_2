@@ -1,0 +1,57 @@
+/* Layout */
+#section1 {
+  background: url(sec1/sec1_hintergrund_aktuell.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+  position: relative;
+}
+
+#sec1Socke{
+  position: absolute;
+  width: 700px;  
+  min-width: 412px;
+  margin-left: 40%;
+}
+
+/* Typography */
+#section1 h1, #section1 p {
+  font-family: var(--main-font-family);
+  position: absolute;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+
+#section1 h1 {
+  top: 350px;
+  margin-left: 280px;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+#section1 p {
+  top: 420px;
+  margin-left: 345px;
+  font-size: 20px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+/* Buttons */
+#section1 button {
+  position: absolute;
+  top: 75%;
+  margin-left: 280px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: var(--button-radius);
+  width: var(--button-width);
+  height: var(--button-height);
+  border-style: none;
+  transition: background-color 0.1s ease;
+}
+
+#section1 button:hover {
+  background-color: #ddd;
+}

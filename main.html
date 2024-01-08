@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CALZINI</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Sarah karollus">
+  <meta name="description" content="CALZINI! Verbindet Socken und FIAT">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style_overall.css">
+  <link rel="stylesheet" href="style_sec1.css">
+  <link rel="stylesheet" href="style_sec2.css">
+  <link rel="stylesheet" href="breakpoints.css">
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="logo">
+      <img src="logo bunt.png" alt="Calzini Logo" width="80">
+    </div>
+
+    <div class="burger-menu" onclick="toggleMenu()">
+
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="dropdownMenu" class="dropdown-menu">
+      <input type="text" class="search-bar" placeholder="Suchen...">
+      <p>CALZINI 500</p>
+      <p>Konfiguration</p>
+      <p>Edizione per bambini</p> 
+      <p>(500)RED</p>
+      <p>Infotainment</p>
+
+    </div>
+
+  </header>
+
+  <!------- SECTION 1 ----------->
+
+  <section id="section1">
+    <img id="sec1Socke" src="sec1/sec1_socke_transparent.png" alt="Sockenbild">
+
+    <a href="#section2"><button>konfigurieren</button></a>
+
+    <h1> CALZINI 500 </h1>
+
+    <p> IKONISCH, UNVERWECHSELBAR, BEQUEM </p>
+
+  </section>
+
+
+  <!------- SECTION 2 ----------->
+
+  <section id="section2">
+
+    <img id="sec2Image" src="sec2/blaueSocketransparent.png" alt="Socke in blau" width="80">
+
+    <h2 id="sec2h2">Farbe auswählen</h2>
+
+    <div class="color-container">
+      <div class="color-circle active" style="background-color: #86a09d;"></div> <!-- TAUGRÜN -->
+      <div class="color-circle" style="background-color: #2e2e2e;"></div> <!-- VESUVIO SCHWARZ -->
+      <div class="color-circle" style="background-color: #f2f2f2;"></div> <!-- GELATO WEIß -->
+      <div class="color-circle" style="background-color: #8e2521;"></div> <!-- PASSIONE ROT -->
+      <div class="color-circle" style="background-color: #11393f;"></div> <!-- DIPINTO DI BLU BLAU -->
+      <div class="color-circle" style="background-color: #df781c;"></div> <!-- SICILIA ORANGE -->
+    </div>
+
+
+
+    <p id="colorText">TAUGRÜN</p>
+
+    <button id="button" onclick="showForm()">ANGEBOT ANFORDERN</button>
+
+    <div id="offerForm">
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br><br>
+        <label for="location">Standort des Händlers:</label><br>
+        <input type="text" id="location" name="location"><br>
+
+        <input type="submit" value="Abschicken">
+      </form>
+    </div>
+
+
+    <div class="Icons">
+      <div class="icon-container">
+        <h1> HYBRID-WINTER-SOCK </h1>
+        <img src="sec2/winterSocke.png" alt="Wintersocken im Kreis">
+      </div>
+      <div class="icon-container">
+        <h1> URBANER KULT-CHARME </h1>
+        <img src="sec2/pizza.png" alt="Pizza">
+      </div>
+      <div class="icon-container">
+        <h1> 500% SPASS </h1>
+        <img src="sec2/sportSocke.png" alt="Sportsocke">
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <script src="script.js"></script>
+
+</body>

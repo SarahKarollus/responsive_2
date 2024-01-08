@@ -1,0 +1,98 @@
+:root{
+  --main-color: #333;
+    --main-margin: 50px;
+    --main-font-size: 1.25em;
+    --button-width: 300px;
+    --button-height: 50px;
+    --button-radius: 30px;
+    --main-margin-smart: 150px;
+    --main-font-family: arial;
+}
+
+body {
+  font-family: var(--main-font-family);
+  overflow-x: hidden;
+}
+
+.logo {
+  position: relative;
+  top: 15px;
+  display: block;
+  z-index: 9999;
+  padding-left: 100px;
+}
+
+header {
+  padding-top: 2px;
+  margin-bottom: 0;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  height: 68px;
+}
+
+/* =================
+   NAVIGATION STYLES
+   ================= */
+
+
+   .burger-menu {
+    width: 30px;
+    height: 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 20px;
+    cursor: pointer;
+    z-index: 9999;
+    display: none;
+}
+
+    .burger-menu div {
+        /* Style der Striche vom Icon */
+        width: 100%;
+        height: 4px;
+        background-color: var(--main-color);
+        position: absolute;
+        transition: all 0.3s;
+        z-index: 1;
+    }
+    
+    .burger-menu div:nth-child(1) {
+        /*  die Menü Striche ansich */
+        top: 5px;
+    }
+    
+    .burger-menu div:nth-child(2) {
+        top: 13px;
+    }
+    
+    .burger-menu div:nth-child(3) {
+        top: 21px;
+    }
+
+
+
+
+.dropdown-menu {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 400px;
+    height: auto;
+    background-color: #f9f9f9;
+    padding: 50px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+
+.search-bar {
+    display: block;
+    width: 250px;
+    max-width: 300px;
+    margin-top: 40px;
+    padding: 10px;
+    font-size: 18px;
+}
