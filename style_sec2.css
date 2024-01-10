@@ -1,6 +1,6 @@
 /* Layout */
 #section2 {
-  height: 700px;
+  height: 1300px;
   position: relative;
   max-width: 100%; /* Ersetzen Sie 1000px durch die gewünschte maximale Breite */
   margin: auto;
@@ -54,22 +54,38 @@
 }
 
 /* Icons */
-.Icons {
-  display: flex;
-  justify-content: flex-start;
-  gap: 200px;
-  margin-top: 30%; 
-}
-
-.Icons img {
-  width: 200px; 
-  height: 200px; 
-}
 .icon-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: start;
+  flex-wrap: wrap;
+  margin-top: 300px;
+  margin-left: 200px;
 }
+
+.icon {
+ width: 300px;
+ height: auto;
+  margin: 30px;
+}
+
+.icon img {
+  width: 100%;
+  height: auto;
+}
+
+.icon-container .icon p{
+  font-size: 12px;
+  color: #555;
+  font-weight: lighter;
+}
+
+.icon-container .icon h2{
+  font-size: 30px;
+  color: #000000;
+  margin-left: 70px;
+}
+
 
 /* Other */
 #sec2h2, .color-container {

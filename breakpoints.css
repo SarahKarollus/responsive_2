@@ -38,10 +38,11 @@
   /* section 1 */
   #section1 button {
     position: absolute;
-    top: 55%;
-    left: -7% !important;
+    top: 55%;  
     transform: translateX(-50%);
-
+    margin-left: 210px;
+    margin-top: 120px !important;
+  
   }
 
   #section1 h1 {
@@ -83,15 +84,24 @@
   }
 
   #sec2Image{
-   right: 20%;
+    position: absolute;
+    left:100px;
+    right: auto;
+    top: 150px;
   }
 
   #sec2h2, .color-container {
     margin-left: 60px;
+    margin-top: 200px;
   }
 
+#sec2h2{
+  top: 480px;
+  left: 230px;
+}
+
   .color-container {
-    margin-left: 60px;
+    margin-left: -10px;
     width: 250px; 
     height: 100px; 
     border-radius: 50%; 
@@ -102,12 +112,13 @@
   
   
   #colorText{
-    margin-left: 40px;
+    margin-left: 300px;
+    margin-top: 270px;
   }
 
-  button{
-    margin-left: 60px;
-    margin-top: 140px !important;
+  #section2 button{
+    margin-left: 20px;
+    margin-top: 250px !important;
   
   }
 }
@@ -154,30 +165,40 @@
 
   #section1 button{
     margin-top: 150px !important;
-    margin-left: 260px;;
+    margin-left: 210px;;
   }
 
   /* Section 2 */
   
+  #sec2Image{
+    position: absolute;
+    left: -80px;
+    right: auto;
+    top: 150px;
+  }
 
   .color-container {
     display: flex;
     flex-direction: row;
-    margin-top: 360px;
+    margin-top: 200px;
+    left: 150px;
   }
   #section2 #button  {
-    margin-top: 320px !important; 
+    margin-top: 200px !important; 
+    left: 100px;
   }
   
   #colorText{
     margin-top: 250px;
+    margin-left: 150px;
   }
 
   #sec2h2{
-    top: 640px;
+    top: 480px;
+    left: 90px;
   }
 
- 
+
 }
 
 /* Kleine Smartphone Bildschirme ----- 3.Breake*/
@@ -239,4 +260,6 @@
     display: flex;
     flex-direction:row;
    }
+
+   
 }
