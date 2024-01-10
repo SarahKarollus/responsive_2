@@ -2,7 +2,7 @@
 #section2 {
   height: 700px;
   position: relative;
-  max-width: 1000px; /* Ersetzen Sie 1000px durch die gewünschte maximale Breite */
+  max-width: 100%; /* Ersetzen Sie 1000px durch die gewünschte maximale Breite */
   margin: auto;
   left: 50px;
 }
@@ -10,7 +10,7 @@
 #sec2Image {
   position: absolute;
   top: 350px;
-  right: 100px;
+  left: 700px;
   transform: translateY(-50%);
   width: 600px;
 }
@@ -21,7 +21,7 @@
 #colorText {
   font-size: var(--main-font-size);
   color: #292929;
-  margin-left: -20px;
+  margin-left: 300px;
   margin-top: 330px;
 }
 
@@ -34,7 +34,7 @@
 /* Buttons */
 #section2 #button {
   position: absolute;
-  left: -20px;
+  left: 270px;
   background-color: rgb(0, 0, 0);
   border-radius: var(--button-radius);
   width: var(--button-width);
@@ -74,7 +74,7 @@
 /* Other */
 #sec2h2, .color-container {
   position: relative;
-  left: -20px; 
+  left: 300px; 
   top: 300px;
 }
 .color-container {
@@ -99,7 +99,8 @@
 #offerForm{
   display: none;
   position: absolute;
-  top: 15%; left: 30%;
+  top: 400px; 
+  left: 400px;
   transform: translate(-50%, -50%);
   z-index: 1000;
   background: white;

@@ -26,10 +26,6 @@ function toggleBurgerMenu() {
 // Event-Listener hinzufügen
 burgerMenu.addEventListener('click', toggleBurgerMenu);
 
-
-// Event-Listener zu Kreisen hinzufügen
-addEventListenersToCircles();
-
 // ------------------> SECTION 2 <---------------------
 
 // Funktion zum Hinzufügen von Event-Listenern zu Kreisen
@@ -65,10 +61,11 @@ document.addEventListener("click", function(event) {
 });
 
 // Event-Listener hinzufügen, um das Formular zu öffnen, wenn der Button geklickt wird
-document.getElementById("button1").addEventListener("click", function(event) {
+document.getElementById("button").addEventListener("click", function(event) {
     event.stopPropagation(); // Verhindert, dass das Formular sofort wieder geschlossen wird
     showForm();
 });
 
 
-
+// Event-Listener zu Kreisen hinzufügen
+addEventListenersToCircles();

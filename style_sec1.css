@@ -1,11 +1,12 @@
 /* Layout */
 #section1 {
   background: url(sec1/sec1_hintergrund_aktuell.png);
-  background-size: cover;
+  background-size: cover ;
   background-position: center;
   background-repeat: no-repeat;
   height: 700px;
   position: relative;
+  width: 100%;
 }
 
 #sec1Socke{
