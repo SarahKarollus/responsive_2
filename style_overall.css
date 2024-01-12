@@ -1,13 +1,17 @@
+
+@font-face {
+  font-family: 'Poppins', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap') format('woff2');
+}
 :root{
   --main-color: #333;
-    --main-margin: 50px;
-    --main-font-size: 1.25em;
-    --button-width: 300px;
-    --button-height: 50px;
-    --button-radius: 30px;
-    --main-margin-smart: 150px;
-    --main-font-family: arial;
-}
+  --main-margin: 50px;
+  --main-font-size: 1.25em;
+  --button-width: 300px;
+  --button-height: 50px;
+  --button-radius: 30px;
+  --main-margin-smart: 150px;
+  --main-font-family: 'Poppins', sans-serif;
 
 body {
   font-family: var(--main-font-family);
