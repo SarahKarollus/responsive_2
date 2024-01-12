@@ -24,7 +24,14 @@ function toggleBurgerMenu() {
 }
 
 // Event-Listener hinzufügen
-burgerMenu.addEventListener('click', toggleBurgerMenu);
+document.querySelector('.burger-menu').addEventListener('click', function() {
+    var menu = document.querySelector('.menu');
+    if (menu.style.display === 'none') {
+      menu.style.display = 'block';
+    } else {
+      menu.style.display = 'none';
+    }
+  });
 
 // ------------------> SECTION 2 <---------------------
 
