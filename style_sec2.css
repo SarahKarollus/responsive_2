@@ -2,7 +2,7 @@
 #section2 {
   height: 1300px;
   position: relative;
-  max-width: 100%; /* Ersetzen Sie 1000px durch die gewünschte maximale Breite */
+  max-width: 100%; 
   margin: auto;
   left: 50px;
 }
@@ -10,7 +10,7 @@
 #sec2Image {
   position: absolute;
   top: 350px;
-  left: 700px;
+  left: 43%;
   transform: translateY(-50%);
   width: 600px;
 }
@@ -21,7 +21,7 @@
 #colorText {
   font-size: var(--main-font-size);
   color: #292929;
-  margin-left: 300px;
+  margin-left: 27%;
   margin-top: 330px;
 }
 
@@ -29,12 +29,13 @@
   font-size: 12px;
   color: #555;
   font-weight: lighter;
+  margin-left: 1%;
 }
 
 /* Buttons */
 #section2 #button {
   position: absolute;
-  left: 270px;
+  left: 26.5%;
   background-color: rgb(0, 0, 0);
   border-radius: var(--button-radius);
   width: var(--button-width);
@@ -57,40 +58,46 @@
 .icon-container {
   display: flex;
   flex-direction: row;
-  align-items: start;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
+  margin: auto;
   margin-top: 300px;
-  margin-left: 200px;
 }
 
 .icon {
  width: 300px;
  height: auto;
   margin: 30px;
+  text-align: center;
 }
 
 .icon img {
-  width: 100%;
+  width: 50%;
   height: auto;
+  display: block;
+  margin: auto;
+  object-fit: cover;
 }
 
 .icon-container .icon p{
   font-size: 12px;
   color: #555;
   font-weight: lighter;
+  text-align: center;
 }
 
 .icon-container .icon h2{
   font-size: 30px;
   color: #000000;
-  margin-left: 70px;
+  text-align: center;
 }
 
 
 /* Other */
 #sec2h2, .color-container {
   position: relative;
-  left: 300px; 
+  left: 26%; 
   top: 300px;
 }
 .color-container {
@@ -104,12 +111,12 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  margin: 5px;
+  margin: 10px;
   cursor: pointer;
 }
 
 .color-circle.active {
-  transform: scale(1.5);
+  transform: scale(1.8);
 }
 
 #offerForm{
@@ -123,5 +130,5 @@
   padding: 50px; 
   border: 1px solid black;
   width: 300px;
-  height: 120px;
+  height: 180px;
 }

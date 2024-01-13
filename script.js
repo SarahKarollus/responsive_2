@@ -1,6 +1,6 @@
 // Farbkreise und Farben definieren
 const circles = document.querySelectorAll('.color-circle');
-const colors = ['TAUGRÜN', 'VESUVIO SCHWARZ', 'GELATO WEISS', 'PASSIONE ROT', 'DIPINTO DI BLU', 'SICILIA ORANGE'];
+const colors = ['TAU GRÜN', 'VESUVIO SCHWARZ', 'GELATO WEISS', 'PASSIONE ROT', 'DIPINTO DI BLU BLAU', 'SICILIA ORANGE'];
 
 
 // ------------------> NAVIGATION <---------------------
