@@ -69,7 +69,6 @@ function addEventListenersToCircles() {
         });
     });
 }
-
 // Funktion für ein Form um das Angebot anzufordern
 function showForm() {
     document.getElementById("offerForm").style.display = "block";
@@ -94,7 +93,24 @@ document.getElementById("button").addEventListener("click", function(event) {
 addEventListenersToCircles();
 
 
+// ------------------> SECTION 3 <---------------------
+var modal3 = document.getElementById("myModal3");
+var btn3 = document.getElementById("readMore3");
+var span3 = document.getElementsByClassName("close3")[0];
 
+btn3.onclick = function() {
+  modal3.style.display = "block";
+}
+
+span3.onclick = function() {
+  modal3.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal3) {
+    modal3.style.display = "none";
+  }
+}
 // ------------------> SECTION 4 <---------------------
 
 // Funktion für ein Form um das Angebot in Section 4 anzufordern
@@ -117,29 +133,20 @@ document.addEventListener("click", function(event) {
 
 
 
+var modal4 = document.getElementById("myModal4");
+var btn4 = document.getElementById("readMore4");
+var span4 = document.getElementsByClassName("close4")[0];
 
-// Holt das Modal
-var modal = document.getElementById("myModal");
-
-// Holt den Button, der das Modal öffnet
-var btn = document.getElementById("readMore4");
-
-// Holt das <span> Element, das das Modal schließt
-var span = document.getElementsByClassName("close")[0];
-
-// Wenn der Benutzer auf den Button klickt, öffnet sich das Modal
-btn.onclick = function() {
-  modal.style.display = "block";
+btn4.onclick = function() {
+  modal4.style.display = "block";
 }
 
-// Wenn der Benutzer auf <span> (x) klickt, schließt sich das Modal
-span.onclick = function() {
-  modal.style.display = "none";
+span4.onclick = function() {
+  modal4.style.display = "none";
 }
 
-// Wenn der Benutzer irgendwo außerhalb des Modals klickt, schließt sich dieses
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == modal4) {
+    modal4.style.display = "none";
   }
 }

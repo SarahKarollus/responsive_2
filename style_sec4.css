@@ -30,44 +30,45 @@
   overflow: hidden;
 }
 /* Der Modal (Hintergrund) */
-.modal {
-  display: none; /* Versteckt standardmäßig */
-  position: fixed; /* Bleibt an Ort und Stelle */
-  z-index: 1; /* Liegt über allem anderen */
-  padding-top: 100px; /* Positioniert es 100px von oben */
+.modal4 {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
   left: 0;
   top: 0;
-  width: 100%; /* Volle Breite */
-  height: 100%; /* Volle Höhe */
-  overflow: auto; /* Ermöglicht das Scrollen, wenn nötig */
-  background-color: rgb(0,0,0); /* Schwarzer Hintergrund mit Opazität */
-  background-color: rgba(0,0,0,0.4); /* Schwarzer Hintergrund mit Opazität */
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0);  
+  background-color: rgba(0,0,0,0.4); 
 }
 
 /* Modal Content */
-.modal-content {
+.modal-content4 {
   background-color: #fefefe;
   margin: auto;
-  padding: 20px;
+  padding: 50px;
   border: 1px solid #888;
   width: 80%;
   color: rgb(205, 19, 30);
 }
 
-.modal-content p{
+.modal-content4 p{
   color: rgb(205, 19, 30) !important;
+  margin-left: -10px !important;
 }
 
 /* Der Close Button */
-.close {
+.close4 {
   color: rgb(205, 19, 30);
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close4:hover,
+.close4:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;

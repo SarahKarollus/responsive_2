@@ -1,5 +1,10 @@
 /* Kleine Desktop oder Tablet Bildschirme ----- 1.Breake*/
 @media screen and (max-width: 1024px) {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
   .dropdown-menu {
     display: none;
@@ -135,6 +140,50 @@
     height: 150px;
   }
 
+  /* Section 3 */
+
+  #section3{
+    padding-left: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #section3 .content3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #section3 h1 {
+    text-align: center;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #section3 .content3 .p1{
+    text-align: center;
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #section3 .content3 .p2 {
+    min-width: 100%;
+  }
+
+  #readMore3 {
+    display: none;
+  }
+
+  #section3 .content3 img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   /* Section 4 */
   #section4 .content4 {
     display: flex;
@@ -152,11 +201,11 @@
     order: 1;
   }
 
-  #readMore4{
-    left: -400px;
+  #readMore4 {
+    display: none;
   }
 
-  #section4 #button4{
+  #section4 #button4 {
     margin-left: 27%;
   }
 
@@ -245,6 +294,19 @@
   }
 
 
+   /* Section 3 */
+  #section3 h1 {
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #section3 .content3 .p1{
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
   /* Section 4 */
   #section4 .content4 {
     display: flex;
@@ -259,7 +321,7 @@
     order: 1;
   }
 
-  #readMore4{
+  #readMore4 {
     left: -430px;
   }
 
