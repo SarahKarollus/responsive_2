@@ -14,6 +14,8 @@
   --main-font-family: 'Poppins', sans-serif;
 }
 
+
+
   body {
     font-family: var(--main-font-family);
     overflow-x: hidden;
@@ -84,7 +86,7 @@
     position: fixed;
     right: 0;
     top: 0;
-    width: 400px;
+    width: 50%;
     height: auto;
     background-color: #f9f9f9;
     padding: 50px;
@@ -95,8 +97,7 @@
 
   .search-bar {
     display: block;
-    width: 250px;
-    max-width: 300px;
+    width: 75%;
     margin-top: 40px;
     padding: 10px;
     font-size: 18px;

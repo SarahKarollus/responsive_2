@@ -1,6 +1,7 @@
 #section4 {
   margin-top: 10px;
   min-height: 800px;
+  max-height: fit-content;
   background-color: rgb(205, 19, 30);
   display: flex;
   flex-direction: column;
@@ -22,28 +23,70 @@
   width: 100%;
   text-align: left;
   color: white;
-  margin-left: 60px;
-  margin-top: -7px;
+  margin-left: 40px;
+  margin-top: 20px;
   font-size: 18px;
   max-height: 400px;
   overflow: hidden;
 }
+/* Der Modal (Hintergrund) */
+.modal {
+  display: none; /* Versteckt standardmäßig */
+  position: fixed; /* Bleibt an Ort und Stelle */
+  z-index: 1; /* Liegt über allem anderen */
+  padding-top: 100px; /* Positioniert es 100px von oben */
+  left: 0;
+  top: 0;
+  width: 100%; /* Volle Breite */
+  height: 100%; /* Volle Höhe */
+  overflow: auto; /* Ermöglicht das Scrollen, wenn nötig */
+  background-color: rgb(0,0,0); /* Schwarzer Hintergrund mit Opazität */
+  background-color: rgba(0,0,0,0.4); /* Schwarzer Hintergrund mit Opazität */
+}
 
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  color: rgb(205, 19, 30);
+}
+
+.modal-content p{
+  color: rgb(205, 19, 30) !important;
+}
+
+/* Der Close Button */
+.close {
+  color: rgb(205, 19, 30);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 #readMore4 {
   position: absolute;
-  margin-top: 400px;
-  margin-left: 560px;
-  background-color: rgb(134, 7, 7);
+  margin-top: 430px;
+  margin-left: 530px;
+  background-color: rgb(205, 19, 30);
   color: white;
-  border-radius: var(--button-radius);
   width: 90px;
   height: 30px;
   border-style: none;
   transition: background-color 0.1s ease;
+  z-index: 5;
 }
 
 #readMore4:hover {
-  background-color: #007B9A; 
+  background-color: rgb(112, 42, 47); 
 }
 
 #section4 h1 {
@@ -57,7 +100,7 @@
 
 #section4 #button4 {
  position: absolute;
-  margin-left: 560px;
+  margin-left: 540px;
   background-color: rgb(255, 255, 255);
   border-radius: var(--button-radius);
   width: var(--button-width);
@@ -66,7 +109,7 @@
   transition: background-color 0.3s ease;
   text-align: center;
   line-height: var(--button-height);
-  margin-top: 460px;
+  margin-top: 470px;
   color: rgb(0, 0, 0);
 }
 
