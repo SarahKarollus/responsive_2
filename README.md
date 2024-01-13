@@ -1,4 +1,4 @@
 # responsive_2
-<h1>!!!Animationen!!!</h1>
+<h2>!!!Animationen!!!</h2>
 <br>
-<h1>!!!Footer mit Impressum!!!</h1>
+<h2>!!!Footer mit Impressum!!!</h2>
