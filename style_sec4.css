@@ -1,6 +1,6 @@
 #section4 {
   margin-top: 10px;
-  height: 800px;
+  min-height: 800px;
   background-color: rgb(205, 19, 30);
   display: flex;
   flex-direction: column;
@@ -20,23 +20,44 @@
 
 #section4 p {
   width: 100%;
-  text-align: justify;
+  text-align: left;
   color: white;
   margin-left: 60px;
   margin-top: -7px;
   font-size: 18px;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+#readMore4 {
+  position: absolute;
+  margin-top: 400px;
+  margin-left: 560px;
+  background-color: rgb(134, 7, 7);
+  color: white;
+  border-radius: var(--button-radius);
+  width: 90px;
+  height: 30px;
+  border-style: none;
+  transition: background-color 0.1s ease;
+}
+
+#readMore4:hover {
+  background-color: #007B9A; 
 }
 
 #section4 h1 {
+  text-align: center;
   margin-top: 20px;
   color: white;
-  font-size: 40px;
+  font-size: 250%;
   font-weight: 700;
+  
 }
 
 #section4 #button4 {
-  position: absolute;
-  left: 750px;
+ position: absolute;
+  margin-left: 560px;
   background-color: rgb(255, 255, 255);
   border-radius: var(--button-radius);
   width: var(--button-width);
@@ -45,10 +66,24 @@
   transition: background-color 0.3s ease;
   text-align: center;
   line-height: var(--button-height);
-  top: 500px;
+  margin-top: 460px;
   color: rgb(0, 0, 0);
 }
 
 #section4 #button4:hover {
   background-color: #ddd;
+}
+
+#offerForm4{
+  display: none;
+  position: absolute;
+  top: 400px; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: white;
+  padding: 50px; 
+  border: 1px solid black;
+  width: 300px;
+  height: 180px;
 }

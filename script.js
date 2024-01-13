@@ -76,3 +76,40 @@ document.getElementById("button").addEventListener("click", function(event) {
 
 // Event-Listener zu Kreisen hinzufügen
 addEventListenersToCircles();
+
+
+
+// ------------------> SECTION 4 <---------------------
+
+// Funktion für ein Form um das Angebot in Section 4 anzufordern
+function showForm4() {
+    document.getElementById("offerForm4").style.display = "block";
+}
+
+// Event-Listener hinzufügen, um das Formular zu öffnen, wenn der Button in Section 4 geklickt wird
+document.getElementById("button4").addEventListener("click", function(event) {
+    event.stopPropagation(); // Verhindert, dass das Formular sofort wieder geschlossen wird
+    showForm4();
+});
+// Event-Listener hinzufügen, um das Formular zu schließen, wenn außerhalb geklickt wird
+document.addEventListener("click", function(event) {
+    var form = document.getElementById("offerForm4");
+    if (form.style.display === "block" && !form.contains(event.target)) {
+        form.style.display = "none";
+    }
+});
+
+var text4 = document.getElementById('text4');
+var readMore4 = document.getElementById('readMore4');
+
+// Wenn der Text höher als 500px ist, den "Weiterlesen"-Button anzeigen
+if (text4.scrollHeight > 500) {
+    readMore4.style.display = 'block';
+}
+
+readMore4.addEventListener('click', function() {
+    // Maximale Höhe entfernen, um den gesamten Text anzuzeigen
+    text4.style.maxHeight = 'none';
+    // Optional: "Weiterlesen"-Button ausblenden
+    readMore4.style.display = 'none';
+});

@@ -132,6 +132,16 @@
     width: 150px;
     height: 150px;
   }
+
+/* section 4 */
+  #section4 .content4 p{
+    font-size: 12px;
+  }
+
+  #section4 .content4 img{
+    width: 50%;
+    height: 50%;
+  }
 }
 
 
