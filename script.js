@@ -2,6 +2,15 @@
 const circles = document.querySelectorAll('.color-circle');
 const colors = ['TAU GRÜN', 'VESUVIO SCHWARZ', 'GELATO WEISS', 'PASSIONE ROT', 'DIPINTO DI BLU BLAU', 'SICILIA ORANGE'];
 
+// Definieren Sie ein Array mit den Pfaden zu den Sockenbildern
+var sockImages = [
+    'sec2/blaueSocketransparent.png',
+    'sec2/sec1_socke_schwarz.png',
+    'sec2/sec1_socke_weiß.png',
+    'sec2/sec1_socke_rot.png',
+    'sec2/sec1_socke_blau.png',
+    'sec2/sec1_socke_orange.png', 
+]
 
 // ------------------> NAVIGATION <---------------------
 
@@ -37,6 +46,10 @@ document.querySelector('.burger-menu').addEventListener('click', function() {
 
 // Funktion zum Hinzufügen von Event-Listenern zu Kreisen
 function addEventListenersToCircles() {
+
+    // Wählen Sie das Sockenbild aus
+    var sockImage = document.querySelector('#sec2Image');
+
     circles.forEach(function(circle, index) {
         circle.addEventListener('click', function() {
             // Alle aktiven Klassen entfernen
@@ -50,6 +63,9 @@ function addEventListenersToCircles() {
             // Text einsetzen
             let text = colors[index] || 'TAUGRÜN';
             document.getElementById('colorText').textContent = text;
+
+            // Ändern Sie das Bild der Socke, wenn der Kreis angeklickt wird
+            sockImage.src = sockImages[index];
         });
     });
 }
@@ -97,19 +113,4 @@ document.addEventListener("click", function(event) {
     if (form.style.display === "block" && !form.contains(event.target)) {
         form.style.display = "none";
     }
-});
-
-var text4 = document.getElementById('text4');
-var readMore4 = document.getElementById('readMore4');
-
-// Wenn der Text höher als 500px ist, den "Weiterlesen"-Button anzeigen
-if (text4.scrollHeight > 500) {
-    readMore4.style.display = 'block';
-}
-
-readMore4.addEventListener('click', function() {
-    // Maximale Höhe entfernen, um den gesamten Text anzuzeigen
-    text4.style.maxHeight = 'none';
-    // Optional: "Weiterlesen"-Button ausblenden
-    readMore4.style.display = 'none';
 });
