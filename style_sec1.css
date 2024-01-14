@@ -27,14 +27,14 @@
 
 #section1 h1 {
   top: 350px;
-  margin-left: 280px;
+  margin-left: 380px;
   font-size: 50px;
   font-weight: 700;
 }
 
 #section1 p {
   top: 420px;
-  margin-left: 330px;
+  margin-left: 430px;
   font-size: 20px;
   font-weight: 400;
   white-space: nowrap;
@@ -44,7 +44,7 @@
 #section1 button {
   position: absolute;
   top: 75%;
-  margin-left: 280px;
+  margin-left: 380px;
   transform: translate(-50%, -50%);
   background-color: white;
   border-radius: var(--button-radius);

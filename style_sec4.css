@@ -1,15 +1,15 @@
 #section4 {
-  margin-top: 10px;
-  min-height: 800px;
+  margin-top: 0x;
+  height: auto;
   max-height: fit-content;
   background-color: rgb(205, 19, 30);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   position: relative;
-  font-family: var(--main-font-family);
-  margin-top: 0;
+  font-family: var(--main-font-family);color: white;
+  padding: 20px;
 }
 
 #section4 .content4 {
@@ -40,8 +40,7 @@
   top: 0;
   width: 100%; 
   height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0);  
+  overflow: auto;
   background-color: rgba(0,0,0,0.4); 
 }
 
@@ -94,41 +93,44 @@
 #section4 h1 {
   text-align: center;
   margin-top: 20px;
-  color: white;
   font-size: 250%;
   font-weight: 700;
+}
   
-}
-
-#section4 #button4 {
- position: absolute;
-  margin-left: 540px;
-  background-color: rgb(255, 255, 255);
-  border-radius: var(--button-radius);
-  width: var(--button-width);
-  height: var(--button-height);
-  border-style: bold;
-  transition: background-color 0.3s ease;
-  text-align: center;
-  line-height: var(--button-height);
-  margin-top: 470px;
-  color: rgb(0, 0, 0);
-}
+  #section4 #button4 {
+    position: absolute;
+    margin-left: 690px;
+    transform: translateX(-50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: var(--button-radius);
+    width: var(--button-width);
+    height: var(--button-height);
+    border-style: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    line-height: var(--button-height);
+    margin-top: 470px;
+    color: rgb(0, 0, 0);
+    
+  }
+  
 
 #section4 #button4:hover {
   background-color: #ddd;
 }
 
-#offerForm4{
+#offerForm4 {
   display: none;
   position: absolute;
-  top: 400px; 
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
   background: white;
-  padding: 50px; 
+  padding: 50px;
   border: 1px solid black;
   width: 300px;
-  height: 180px;
+  height: 250px;
+  font-size: small;
+  color: black;
 }

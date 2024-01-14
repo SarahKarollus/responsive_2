@@ -1,0 +1,19 @@
+#section5{
+  background-color: #113653;
+  margin-top: 50px;
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+}
+
+.content5 h2{
+  display: flex; 
+  justify-content: center;
+}
+
+body {
+  background-color: white; /* Ändern Sie dies vorübergehend */
+}
+html {
+  background-color: white; /* Ändern Sie dies vorübergehend */
+}

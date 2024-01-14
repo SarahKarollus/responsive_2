@@ -98,13 +98,13 @@
 
   #sec2h2,
   .color-container {
-    margin-left: 60px;
+    left: 30%;
     margin-top: 200px;
   }
 
   #sec2h2 {
     top: 480px;
-    margin-left: -10px;
+    left: 30%;
   }
 
   .color-container {
@@ -119,12 +119,12 @@
 
 
   #colorText {
-    margin-left: 25%;
+    margin-left: 38%;
     margin-top: 270px;
   }
 
   #section2 button {
-    margin-left: -2%;
+    margin-left: 25%;
     margin-top: 250px !important;
 
   }
@@ -266,9 +266,10 @@
 
   #sec2Image {
     position: absolute;
-    margin-left: -30px !important;
+    left: -10% !important;
     right: auto;
     top: 150px;
+    margin-right: 10px;
   }
 
   .color-container {
@@ -280,7 +281,7 @@
 
   #section2 #button {
     margin-top: 200px !important;
-    margin-left: -45px;
+    margin-left: 19%;
   }
 
   #colorText {
@@ -290,7 +291,7 @@
 
   #sec2h2 {
     top: 480px;
-    margin-left: -45px;
+    left: 25%;
   }
 
 
@@ -373,10 +374,10 @@
 
     #sec1Socke {
       position: relative;
-      left: -175px;
+      left: -50%;
       margin-top: 400px;
-      height: 600px;
-      width: auto;
+      height: auto;
+      width: 140%;
     }
 
     #section1 h1 {
@@ -393,7 +394,7 @@
 
     #section1 button {
       margin-top: 190px !important;
-      margin-left: 200px;
+      margin-left: -800px !important;
     }
 
     /* Section 2 */
