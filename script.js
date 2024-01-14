@@ -41,6 +41,11 @@ document.querySelector('.burger-menu').addEventListener('click', function() {
       menu.style.display = 'none';
     }
   });
+// ------------------> SECTION 1 <---------------------
+
+document.querySelector('#sec1Socke').addEventListener('click', function(event) {
+  event.preventDefault();
+});
 
 // ------------------> SECTION 2 <---------------------
 
