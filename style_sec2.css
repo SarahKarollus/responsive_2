@@ -29,7 +29,8 @@
   font-size: 12px;
   color: #555;
   font-weight: lighter;
-  margin-left: 1%;
+  margin-left: 0;
+  margin-bottom: 8px;
 }
 
 /* Buttons */
@@ -85,12 +86,14 @@
   color: #555;
   font-weight: lighter;
   text-align: center;
+  margin-top: 10px;
 }
 
 .icon-container .icon h2{
-  font-size: 30px;
+  font-size: 25px;
   color: #000000;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 
@@ -119,16 +122,19 @@
   transform: scale(1.8);
 }
 
-#offerForm{
+#offerForm {
   display: none;
-  position: absolute;
-  top: 400px; 
-  left: 400px;
-  transform: translate(-50%, -50%);
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
   z-index: 1000;
-  background: white;
+  background: #77B7AF;
+  color: white;
   padding: 50px; 
   border: 1px solid black;
-  width: 300px;
-  height: 180px;
+  width: 400px;
+  height: 270px;
 }
+
+
