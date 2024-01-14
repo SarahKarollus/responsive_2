@@ -607,4 +607,31 @@
   margin-left: -130px !important;
   margin-top: -25% !important;
 }
+
+/* Section 5 */
+#section5{
+  height: 1000px;
+}
+
+#section5 h2{ 
+  margin-left: 8%;
+  font-size: 15px;
+  justify-content:space-evenly;
+  margin-right: 6%;
+}
+
+.content5 img{
+  width: 70% !important;
+  margin-left: -7%;
+  margin-right: 5%;
+}
+
+#p-1, #p-2{
+  font-size: 14px !important;
+  margin-left: -20px !important;
+  height: 100%;
+}
+
+
+
 }
