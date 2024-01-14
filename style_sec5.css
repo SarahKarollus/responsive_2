@@ -2,18 +2,61 @@
   background-color: #113653;
   margin-top: 50px;
   width: 100%;
-  height: 100vh;
-  padding: 50px;
+  height: 800px;
 }
 
-.content5 h2{
-  display: flex; 
+.content5{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  font-size: 3vw; 
+  margin-left: 100px;
+}
+
+#section5 h2{  
+  margin-left: 35%; 
+  width: 100%;
+  text-align: left;
+  color: white;
+  margin-top: 20px;
+  font-size: 18px;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+#section5 h2:hover{
+  text-decoration: underline;
+}
+
+#h2-1 {
+  margin-right: -50%; /* Ändern Sie dies entsprechend */
+}
+
+
+
+#p-1{
+  display: block;
+}
+
+#p-2{
+  display: none;}
+
+
+
+.h2-container {
+  text-align: center;
+  display: flex;
   justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-body {
-  background-color: white; /* Ändern Sie dies vorübergehend */
+.content5 img{
+  margin-left: 10%;
+  margin-right: 5%;
 }
-html {
-  background-color: white; /* Ändern Sie dies vorübergehend */
+
+.underline {
+  text-decoration: underline;
 }
+

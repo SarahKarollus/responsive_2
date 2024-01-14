@@ -206,9 +206,42 @@
   }
 
   #section4 #button4 {
-    margin-left: 27%;
+    margin-left: 180px;
     margin-top: 300px;
   }
+
+  /* Section 5 */
+  #section5 {
+    height:fit-content;
+    padding-bottom: 40px;
+  }
+
+  #section5 .content5 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #section5 h2{  
+    margin-left: 28%; 
+  }
+
+  #section5 .content5 img{
+    order: 1;
+    display: flex;
+    width: 70%;
+    height: auto;
+    margin-left: 20%;
+  }
+
+  #section5 .content5 p{
+    order: 2;
+    width: 80%;
+    display: flex;
+    text-align: left;
+    overflow: hidden;
+    margin-left: 20%;
+  }
+
 
 }
 
@@ -309,11 +342,11 @@
     align-items: center;
   }
 
-  #section3 .content3 img{
-  margin-left: -40px;
-  width: 100%;
-  height: auto;
-}
+  #section3 .content3 img {
+    margin-left: -40px;
+    width: 100%;
+    height: auto;
+  }
 
   /* Section 4 */
   #section4 .content4 {
@@ -344,75 +377,75 @@
   }
 
   #section4 .content4 #button4 {
-    margin-left: 15%;
+    margin-left: 180px;
     top: 270px;
   }
 
 }
 
-  /* Kleine Smartphone Bildschirme ----- 3.Breake*/
-  @media screen and (max-width: 412px) {
-    body {
-      overflow-x: hidden;
-      max-width: 100vw;
-    }
-
-    .logo {
-      padding-left: 5px;
-    }
-
-    .burger-menu {
-      display: block;
-      right: 68%;
-    }
-
-    /* Section 1 */
-
-    #section1 {
-      white-space: nowrap;
-    }
-
-    #sec1Socke {
-      position: relative;
-      left: -50%;
-      margin-top: 400px;
-      height: auto;
-      width: 140%;
-    }
-
-    #section1 h1 {
-      margin-left: 160px;
-    }
-
-    #section1 p {
-      margin-left: 60px;
-      margin-top: 70px;
-      font-size: 18px;
-      width: 70%;
-      word-wrap: break-word;
-    }
-
-    #section1 button {
-      margin-top: 190px !important;
-      margin-left: -800px !important;
-    }
-
-    /* Section 2 */
-
-    #sec2Image {
-      margin-left: -220px;
-    }
-
-    #section2 #button {
-      margin-top: 300px !important;
-      margin-left: 20px;
-    }
-
-    .color-container {
-      margin-top: 350px;
-      display: flex;
-      flex-direction: row;
-    }
-
-
+/* Kleine Smartphone Bildschirme ----- 3.Breake*/
+@media screen and (max-width: 412px) {
+  body {
+    overflow-x: hidden;
+    max-width: 100vw;
   }
+
+  .logo {
+    padding-left: 5px;
+  }
+
+  .burger-menu {
+    display: block;
+    right: 68%;
+  }
+
+  /* Section 1 */
+
+  #section1 {
+    white-space: nowrap;
+  }
+
+  #sec1Socke {
+    position: relative;
+    left: -50%;
+    margin-top: 400px;
+    height: auto;
+    width: 140%;
+  }
+
+  #section1 h1 {
+    margin-left: 160px;
+  }
+
+  #section1 p {
+    margin-left: 60px;
+    margin-top: 70px;
+    font-size: 18px;
+    width: 70%;
+    word-wrap: break-word;
+  }
+
+  #section1 button {
+    margin-top: 190px !important;
+    margin-left: -800px !important;
+  }
+
+  /* Section 2 */
+
+  #sec2Image {
+    margin-left: -220px;
+  }
+
+  #section2 #button {
+    margin-top: 300px !important;
+    margin-left: 20px;
+  }
+
+  .color-container {
+    margin-top: 350px;
+    display: flex;
+    flex-direction: row;
+  }
+
+
+}

@@ -150,3 +150,20 @@ window.onclick = function(event) {
     modal4.style.display = "none";
   }
 }
+
+// ------------------> SECTION 5 <---------------------
+
+document.querySelectorAll('#section5 h2').forEach((h2) => {
+  h2.addEventListener('click', (event) => {
+    document.querySelectorAll('#section5 h2').forEach((h) => h.classList.remove('underline'));
+    event.target.classList.add('underline');
+  });
+});
+
+document.querySelectorAll('#section5 h2').forEach((h2, index) => {
+  h2.addEventListener('click', () => {
+    document.querySelectorAll('#section5 p').forEach((p, pIndex) => {
+      p.style.display = pIndex === index ? 'block' : 'none';
+    });
+  });
+});
