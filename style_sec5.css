@@ -8,9 +8,10 @@
 .content5{
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 90%;
   font-size: 3vw; 
   margin-left: 100px;
+  height: auto;
 }
 
 #section5 h2{  
@@ -21,7 +22,7 @@
   margin-top: 20px;
   font-size: 18px;
   max-height: 400px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 #section5 h2:hover{
@@ -29,17 +30,22 @@
 }
 
 #h2-1 {
-  margin-right: -50%; /* Ändern Sie dies entsprechend */
+  margin-right: -50%; 
 }
 
 
 
 #p-1{
   display: block;
+  white-space: normal;
+  font-size: 15px !important;
 }
 
 #p-2{
-  display: none;}
+  display: none;
+  white-space: normal;
+  font-size: 15px !important;
+}
 
 
 
@@ -52,7 +58,7 @@
 }
 
 .content5 img{
-  margin-left: 10%;
+  margin-left: 5%;
   margin-right: 5%;
 }
 

@@ -171,11 +171,15 @@
   }
 
   #section3 .content3 .p2 {
-    min-width: 100%;
+    min-width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin-left: -15%;
   }
 
   #readMore3 {
-    display: none;
+    bottom: 1%;
+    right: 10%;
   }
 
   #section3 .content3 img {
@@ -201,8 +205,19 @@
     order: 1;
   }
 
+  .modal-content4 {
+    width: 90%;
+    height: auto;
+  }
+
+  .modal-content4 p{
+    font-size: 16px !important; 
+  }
+
+  
   #readMore4 {
-    display: none;
+    top: 1%;
+    right: 10%;
   }
 
   #section4 #button4 {
@@ -212,7 +227,7 @@
 
   /* Section 5 */
   #section5 {
-    height:fit-content;
+    height: fit-content;
     padding-bottom: 40px;
   }
 
@@ -221,25 +236,26 @@
     flex-direction: column;
   }
 
-  #section5 h2{  
-    margin-left: 28%; 
+  #section5 h2 {
+    margin-left: 28%;
   }
 
-  #section5 .content5 img{
+  .content5 img{
     order: 1;
     display: flex;
-    width: 70%;
-    height: auto;
-    margin-left: 20%;
+    width: 60% !important; 
+    height: auto !important;
+    margin-left: 15%;
   }
 
-  #section5 .content5 p{
+  #section5 .content5 p {
     order: 2;
     width: 80%;
     display: flex;
     text-align: left;
     overflow: hidden;
-    margin-left: 20%;
+    margin-left: 15%;
+    padding-right: 10%;
   }
 
 
@@ -372,13 +388,59 @@
     max-height: 505px;
   }
 
+  .modal-content4 {
+    width: 100%;
+    min-height: 700px ;
+  }
+
+  .modal-content4 p{
+    font-size: 16px !important; 
+    min-height: 600px;
+  }
+
   #readMore4 {
-    left: -430px;
+    margin-top: 550px; 
+    right: 3%;
   }
 
   #section4 .content4 #button4 {
     margin-left: 180px;
-    top: 270px;
+    top: 290px;
+  }
+
+
+  /* Section 5 */
+  #section5 {
+    height: fit-content;
+    padding-bottom: 20px;
+  }
+
+  #section5 .content5 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #section5 h2 {
+    margin-left: 20%;
+  }
+
+
+  .content5 img{
+    order: 1;
+    display: flex;
+    width: 400px !important; 
+    height: auto !important;
+    margin-left: 10%;
+  }
+
+  #section5 .content5 p {
+    order: 2;
+    width: 80%;
+    display: flex;
+    text-align: left;
+    overflow: hidden;
+    margin-left: 10%;
+    padding-right: 10%;
   }
 
 }
@@ -448,4 +510,8 @@
   }
 
 
+
+
+
+  
 }

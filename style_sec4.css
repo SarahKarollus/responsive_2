@@ -47,10 +47,12 @@
 .modal-content4 {
   background-color: #fefefe;
   margin: auto;
-  padding: 50px;
+  padding: 40px;
   border: 1px solid #888;
   width: 80%;
   color: rgb(205, 19, 30);
+  height: auto;
+  overflow: auto;
 }
 
 .modal-content4 p{
@@ -82,7 +84,7 @@
   height: 30px;
   border-style: none;
   transition: background-color 0.1s ease;
-  z-index: 5;
+  z-index: 1;
 }
 
 #readMore4:hover {

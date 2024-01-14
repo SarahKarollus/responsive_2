@@ -93,22 +93,53 @@ document.getElementById("button").addEventListener("click", function(event) {
 addEventListenersToCircles();
 
 
-// ------------------> SECTION 3 <---------------------
+// ------------------> SECTION 3 & 4 Modale <---------------------
+// Variablen für die Buttons und Modals
 var modal3 = document.getElementById("myModal3");
 var btn3 = document.getElementById("readMore3");
+var modal4 = document.getElementById("myModal4");
+var btn4 = document.getElementById("readMore4");
 var span3 = document.getElementsByClassName("close3")[0];
+var span4 = document.getElementsByClassName("close4")[0];
 
+// Öffnen Sie das Modal 3
 btn3.onclick = function() {
   modal3.style.display = "block";
+  btn3.style.display = "none"; 
+  btn4.style.display = "none"; 
 }
 
+// Schließen Sie das Modal 3
 span3.onclick = function() {
   modal3.style.display = "none";
+  btn3.style.display = "block"; 
+  btn4.style.display = "block"; 
+}
+
+// Öffnen Sie das Modal 4
+btn4.onclick = function() {
+  modal4.style.display = "block";
+  btn4.style.display = "none"; 
+  btn3.style.display = "none"; 
+}
+
+// Schließen Sie das Modal 4
+span4.onclick = function() {
+  modal4.style.display = "none";
+  btn4.style.display = "block"; 
+  btn3.style.display = "block"; 
 }
 
 window.onclick = function(event) {
   if (event.target == modal3) {
     modal3.style.display = "none";
+    btn3.style.display = "block"; 
+    btn4.style.display = "block"; 
+  }
+  if (event.target == modal4) {
+    modal4.style.display = "none";
+    btn4.style.display = "block"; 
+    btn3.style.display = "block"; 
   }
 }
 // ------------------> SECTION 4 <---------------------
@@ -133,23 +164,7 @@ document.addEventListener("click", function(event) {
 
 
 
-var modal4 = document.getElementById("myModal4");
-var btn4 = document.getElementById("readMore4");
-var span4 = document.getElementsByClassName("close4")[0];
 
-btn4.onclick = function() {
-  modal4.style.display = "block";
-}
-
-span4.onclick = function() {
-  modal4.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal4) {
-    modal4.style.display = "none";
-  }
-}
 
 // ------------------> SECTION 5 <---------------------
 

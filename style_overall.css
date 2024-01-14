@@ -49,19 +49,21 @@
 
 
   .burger-menu {
-    width: 30px;
-    height: 20px;
+    width: 40px;
+    height: 30px;
     position: fixed;
     top: 0;
     margin: 20px;
     cursor: pointer;
     z-index: 9999;
     display: none;
+    background-color: white; 
+    padding:  10px 15px 10px 3px;
   }
 
   .burger-menu div {
     /* Style der Striche vom Icon */
-    width: 100%;
+    width: 85%;
     height: 4px;
     background-color: var(--main-color);
     position: absolute;
@@ -110,4 +112,11 @@
   .dropdown-menu a {
     color: black; 
     text-decoration: none; 
+  }
+
+
+  .modal-content3, .modal-content4 {
+    width: 80%;
+    height: auto;
+    overflow: auto;
   }
