@@ -194,6 +194,25 @@ document.querySelectorAll('#section5 h2').forEach((h2, index) => {
   });
 });
 
+// Wählen Sie das p-2-Element und das Bild aus
+var p2Element = document.getElementById('p-2');
+var image = document.querySelector('.blend[src="sec5/stoff_2.jpeg"]');
+
+// Fügen Sie einen Scroll-Event-Listener hinzu
+window.addEventListener('scroll', function() {
+  // Überprüfen Sie, ob das p-2-Element im Viewport sichtbar ist
+  var rect = p2Element.getBoundingClientRect();
+  var isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+
+  // Fügen Sie die 'visible'-Klasse zum Bild hinzu, wenn das p-2-Element sichtbar ist
+  if (isVisible) {
+    image.classList.add('visible');
+  }
+});
+
+
+
+
 
 
 // Wählen Sie alle Bilder mit der Klasse 'blend' aus

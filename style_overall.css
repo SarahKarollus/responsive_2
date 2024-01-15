@@ -281,7 +281,7 @@ footer .icon {
 
 
 .blend {
-  animation: fade-in 3s ease-in-out;
+  animation: fade-in 2s ease-in-out;
 }
 
 .blend.visible {

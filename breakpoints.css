@@ -648,7 +648,7 @@ footer p {
 
   /* Section 2 */
   #section2 {
-    padding-bottom: 50px;
+    padding-bottom: 250px;
   }
 
   #sec2Image {
@@ -688,8 +688,8 @@ footer p {
   .icon-container {
     display: flex;
     flex-direction: row;
-    margin-top: 150px;
     margin-left: -120px;
+    margin-top: -100% !important;
   }
 
   .icon img {
