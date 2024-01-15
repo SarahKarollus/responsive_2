@@ -1,6 +1,6 @@
 #section5{
   background-color: #113653;
-  margin-top: 50px;
+  margin-top: 100px;
   width: 100%;
   height: 800px;
 }
@@ -10,7 +10,6 @@
   justify-content: space-between;
   width: 90%;
   font-size: 3vw; 
-  margin-left: 100px;
   height: auto;
 }
 

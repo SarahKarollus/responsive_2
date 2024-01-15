@@ -11,10 +11,10 @@
 
 #sec1Socke{
   position: absolute;
-  width: 700px;  
+  width: 500px;  
   min-width: 412px;
   margin-left: 40%;
-  margin-top: -30px;
+  margin-top: 40px;
 }
 
 /* Typography */
