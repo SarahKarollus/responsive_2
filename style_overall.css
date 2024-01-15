@@ -195,8 +195,12 @@ footer p {
   padding: 0 20px;
 }
 
+.icon img {
+  width: 50px;  /* Setzen Sie die gewünschte Breite */
+  height: 50px; /* Setzen Sie die gewünschte Höhe */
+  object-fit: contain; /* Behält das Seitenverhältnis des Bildes bei, ohne es zu verzerren */
+}
 footer .icon {
-  border: 1px solid rgb(61, 60, 60);
   border-radius: 50%;
   width: 100px;
   height: 100px;

@@ -321,6 +321,12 @@ footer p {
   margin-left: 0;
 }
 
+.icon img {
+  width: 50px;  /* Setzen Sie die gewünschte Breite */
+  height: 50px; /* Setzen Sie die gewünschte Höhe */
+  object-fit: contain; /* Behält das Seitenverhältnis des Bildes bei, ohne es zu verzerren */
+}
+
 /*---------------------------------------*/
 
 .quellen .quellen-right {
