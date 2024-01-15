@@ -23,6 +23,7 @@
   font-size: 18px;
   max-height: 400px;
   overflow: visible;
+  cursor: pointer;
 }
 
 #section5 h2:hover{

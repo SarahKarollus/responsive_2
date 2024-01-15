@@ -122,3 +122,105 @@
     height: auto;
     overflow: auto;
   }
+
+
+/* Footer Styles */
+footer {
+  position: relative;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 10px;
+}
+
+.footer-content .icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center; 
+  transform: translateY(-200px );
+  border-bottom: 1px solid rgb(134, 129, 129); 
+  width: 100%; 
+  padding: 0 20px;
+}
+
+footer .icon {
+  border: 1px solid rgb(61, 60, 60);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  margin-right: 10px;
+  font-size: 48px !important;
+  background-color: #ffffff;
+  color: #000;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* Stacks the items vertically */
+  justify-content: center; /* Centers the items vertically */
+  align-items: center; /* Centers the items horizontally */
+  text-align: center; /* Centers the text of direct children */ 
+}
+
+
+footer p {
+  color: #000 !important; 
+  font-size: 12px !important;
+  text-align: center !important;
+}
+
+.footercontainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  transform: translateY(-100px );
+  border-bottom: 1px solid rgb(134, 129, 129);
+}
+.left {
+  font-size: 20px;
+  color: #000;
+}
+
+.left p{
+  text-align: left !important;
+}
+
+.right {
+  text-align: right;
+}
+
+.right h2{
+  font-size: 15px;
+  color: #000;
+  white-space: nowrap;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 9px 4px;
+  width: 80%;
+  cursor: pointer;
+  border-radius: 50px / 50px;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.footer-content li {
+  margin-right: 20px;
+}

@@ -48,6 +48,7 @@
   line-height: var(--button-height);
   top: 450px;
   color: white;
+  cursor: pointer;
 }
 
 

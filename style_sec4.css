@@ -88,6 +88,7 @@
   border-style: none;
   transition: background-color 0.1s ease;
   z-index: 1;
+  cursor: pointer;
 }
 
 #readMore4:hover {
@@ -115,7 +116,7 @@
   line-height: var(--button-height);
   margin-top: 470px;
   color: rgb(0, 0, 0);
-
+  cursor: pointer;
 }
 
 
