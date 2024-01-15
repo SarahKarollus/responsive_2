@@ -122,7 +122,7 @@
 }
 
 .color-circle.active {
-  transform: scale(1.8);
+  transform: scale(1.8) !important;
 }
 
 #offerForm {
@@ -142,3 +142,31 @@
 }
 
 
+
+
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  visibility: hidden;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+.scroll-reveal.visible {
+  animation-name: reveal;
+  visibility: visible;
+}
+
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

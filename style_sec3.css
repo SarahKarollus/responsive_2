@@ -107,3 +107,33 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+
+
+
+  .scroll-reveal-right {
+    opacity: 0;
+    transform: translateX(100px);
+    visibility: hidden;
+    animation-fill-mode:forwards;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 2s;
+  }
+  
+  .scroll-reveal-right.visible {
+    animation-name: reveal-right;
+    visibility: visible;
+  }
+  
+  
+  @keyframes reveal-right {
+    0% {
+      opacity: 0;
+      transform: translateX(300px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }

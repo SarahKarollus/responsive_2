@@ -12,6 +12,9 @@ var sockImages = [
     'sec2/sec1_socke_orange.png', 
 ]
 
+
+
+
 // ------------------> NAVIGATION <---------------------
 
 // Burger-Menü-Element auswählen
@@ -94,11 +97,14 @@ document.getElementById("button").addEventListener("click", function(event) {
 });
 
 
-// Event-Listener zu Kreisen hinzufügen
-addEventListenersToCircles();
+// Fügen Sie die Event-Listener zu den Kreisen hinzu, nachdem das DOM geladen wurde
+document.addEventListener('DOMContentLoaded', function() {
+  addEventListenersToCircles();
+});
 
 
 // ------------------> SECTION 3 & 4 Modale <---------------------
+
 // Variablen für die Buttons und Modals
 var modal3 = document.getElementById("myModal3");
 var btn3 = document.getElementById("readMore3");
@@ -187,3 +193,66 @@ document.querySelectorAll('#section5 h2').forEach((h2, index) => {
     });
   });
 });
+
+
+
+// Wählen Sie alle Bilder mit der Klasse 'blend' aus
+var images = document.querySelectorAll('.blend');
+
+// Fügen Sie jedem Bild einen Scroll-Event-Listener hinzu
+window.addEventListener('scroll', function() {
+  images.forEach(function(image) {
+    // Überprüfen Sie, ob das Bild im Viewport sichtbar ist
+    var rect = image.getBoundingClientRect();
+    var isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+
+    // Fügen Sie die 'visible'-Klasse hinzu, wenn das Bild sichtbar ist, und entfernen Sie sie, wenn es nicht sichtbar ist
+    if (isVisible) {
+      image.classList.add('visible');
+    } else {
+      image.classList.remove('visible');
+    }
+  });
+});
+
+
+
+// Wählen Sie alle Elemente mit der Klasse 'scroll-reveal-right' aus
+var elements = document.querySelectorAll('.scroll-reveal-right');
+
+// Fügen Sie jedem Element einen Scroll-Event-Listener hinzu
+window.addEventListener('scroll', function() {
+  elements.forEach(function(element) {
+    // Überprüfen Sie, ob das Element im Viewport sichtbar ist
+    var rect = element.getBoundingClientRect();
+    var isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+
+    // Fügen Sie die 'visible'-Klasse hinzu, wenn das Element sichtbar ist, und entfernen Sie sie, wenn es nicht sichtbar ist
+    if (isVisible) {
+      element.classList.add('visible');
+    } else {
+      element.classList.remove('visible');
+    }
+  });
+});
+
+window.addEventListener('scroll', reveal);
+
+function reveal(){
+  var reveals = document.querySelectorAll('.scroll-reveal');
+
+  for(var i = 0; i < reveals.length; i++){
+    
+    var windowheight = window.innerHeight;
+    var revealtop = reveals[i].getBoundingClientRect().top;
+    var revealpoint = 150;
+
+    if(revealtop < windowheight - revealpoint){
+      reveals[i].classList.add('visible');
+    }
+    else{
+      reveals[i].classList.remove('visible');
+    }
+  }
+}
+

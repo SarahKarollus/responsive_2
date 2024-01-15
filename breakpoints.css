@@ -75,7 +75,7 @@
   }
 
   #sec1Socke {
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: 400px !important;
   }
 
@@ -93,7 +93,7 @@
     position: absolute;
     left: 5%;
     right: auto;
-    top: 150px;
+    top: -30px;
   }
 
   #sec2h2,
@@ -401,7 +401,7 @@ footer p {
     position: absolute;
     left: -30% !important;
     right: auto;
-    top: 150px;
+    top: -100px !important;
     margin-right: 10px;
   }
 
@@ -653,7 +653,7 @@ footer p {
 
   #sec2Image {
     margin-left: -70px;
-    top: 3%;
+    top: 10% !important;
     width: 150%;
     height: auto;
   }
@@ -688,7 +688,7 @@ footer p {
   .icon-container {
     display: flex;
     flex-direction: row;
-    margin-top: 300px;
+    margin-top: 150px;
     margin-left: -120px;
   }
 
@@ -741,14 +741,14 @@ footer p {
 }
 
 #readMore4 {
-  margin-top: 120% !important;
+  margin-top: 130% !important;
   left: 10%;
   z-index: 2;
 }
 
 #section4 #button4 {
   margin-top: 155%;
-  left: 3%;
+  left: -35%;
 }
 
 #section4 .content4 img {
@@ -809,6 +809,7 @@ footer p {
 }
 
 .icon-container{
+  margin-top: 130% !important;
   display: flex;
   flex-direction: column !important;
   align-items: center;

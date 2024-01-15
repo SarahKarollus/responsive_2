@@ -278,3 +278,23 @@ footer .icon {
   align-items: flex-start;
   cursor: pointer;
 }
+
+
+.blend {
+  animation: fade-in 3s ease-in-out;
+}
+
+.blend.visible {
+  animation-name: blend;
+  visibility: visible;
+}
+
+
+@keyframes blend {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
