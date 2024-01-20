@@ -168,10 +168,10 @@ footer p {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column; /* Stacks the items vertically */
-  justify-content: center; /* Centers the items vertically */
-  align-items: center; /* Centers the items horizontally */
-  text-align: center; /* Centers the text of direct children */ 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
 }
 
 .footer-content ul {
@@ -196,9 +196,9 @@ footer p {
 }
 
 .icon img {
-  width: 50px;  /* Setzen Sie die gewünschte Breite */
-  height: 50px; /* Setzen Sie die gewünschte Höhe */
-  object-fit: contain; /* Behält das Seitenverhältnis des Bildes bei, ohne es zu verzerren */
+  width: 50px; 
+  height: 50px;
+  object-fit: contain;
 }
 footer .icon {
   border-radius: 50%;
