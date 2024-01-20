@@ -1,4 +1,2 @@
 # responsive_2
-<h2>!!!Animationen!!!</h2>
-<br>
-<h2>!!!Footer mit Impressum!!!</h2>
+<h2> Webseite von Fiat, welche aber Socken verkauft </h2>
