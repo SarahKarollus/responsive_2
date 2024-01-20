@@ -2,7 +2,7 @@
 const circles = document.querySelectorAll('.color-circle');
 const colors = ['TAU GRÜN', 'VESUVIO SCHWARZ', 'GELATO WEISS', 'PASSIONE ROT', 'DIPINTO DI BLU BLAU', 'SICILIA ORANGE'];
 
-// Definieren Sie ein Array mit den Pfaden zu den Sockenbildern
+// ein Array mit den Pfaden zu den Sockenbildern
 var sockImages = [
     'sec2/blaueSocketransparent.png',
     'sec2/sec1_socke_schwarz.png',
@@ -55,7 +55,7 @@ document.querySelector('#sec1Socke').addEventListener('click', function(event) {
 // Funktion zum Hinzufügen von Event-Listenern zu Kreisen
 function addEventListenersToCircles() {
 
-    // Wählen Sie das Sockenbild aus
+    // das Sockenbild auswählen
     var sockImage = document.querySelector('#sec2Image');
 
     circles.forEach(function(circle, index) {
@@ -72,7 +72,7 @@ function addEventListenersToCircles() {
             let text = colors[index] || 'TAUGRÜN';
             document.getElementById('colorText').textContent = text;
 
-            // Ändern Sie das Bild der Socke, wenn der Kreis angeklickt wird
+            // das Bild der Socke ändern, wenn der Kreis angeklickt wird
             sockImage.src = sockImages[index];
         });
     });
@@ -97,7 +97,7 @@ document.getElementById("button").addEventListener("click", function(event) {
 });
 
 
-// Fügen Sie die Event-Listener zu den Kreisen hinzu, nachdem das DOM geladen wurde
+// die Event-Listener zu den Kreisen hinzufügen, nachdem das DOM geladen wurde
 document.addEventListener('DOMContentLoaded', function() {
   addEventListenersToCircles();
 });
@@ -113,28 +113,28 @@ var btn4 = document.getElementById("readMore4");
 var span3 = document.getElementsByClassName("close3")[0];
 var span4 = document.getElementsByClassName("close4")[0];
 
-// Öffnen Sie das Modal 3
+// das Modal 3 öffne
 btn3.onclick = function() {
   modal3.style.display = "block";
   btn3.style.display = "none"; 
   btn4.style.display = "none"; 
 }
 
-// Schließen Sie das Modal 3
+// das Modal 3 schließen
 span3.onclick = function() {
   modal3.style.display = "none";
   btn3.style.display = "block"; 
   btn4.style.display = "block"; 
 }
 
-// Öffnen Sie das Modal 4
+// das Modal 4 öffnen
 btn4.onclick = function() {
   modal4.style.display = "block";
   btn4.style.display = "none"; 
   btn3.style.display = "none"; 
 }
 
-// Schließen Sie das Modal 4
+//  das Modal 4 schließen
 span4.onclick = function() {
   modal4.style.display = "none";
   btn4.style.display = "block"; 
@@ -194,17 +194,17 @@ document.querySelectorAll('#section5 h2').forEach((h2, index) => {
   });
 });
 
-// Wählen Sie das p-2-Element und das Bild aus
+// das p-2-Element und das Bild auswählen
 var p2Element = document.getElementById('p-2');
 var image = document.querySelector('.blend[src="sec5/stoff_2.jpeg"]');
 
-// Fügen Sie einen Scroll-Event-Listener hinzu
+// einen Scroll-Event-Listener hinzufügen
 window.addEventListener('scroll', function() {
   // Überprüfen Sie, ob das p-2-Element im Viewport sichtbar ist
   var rect = p2Element.getBoundingClientRect();
   var isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
 
-  // Fügen Sie die 'visible'-Klasse zum Bild hinzu, wenn das p-2-Element sichtbar ist
+  // die 'visible'-Klasse zum Bild hinzufügen, wenn das p-2-Element sichtbar ist
   if (isVisible) {
     image.classList.add('visible');
   }
@@ -215,17 +215,17 @@ window.addEventListener('scroll', function() {
 
 
 
-// Wählen Sie alle Bilder mit der Klasse 'blend' aus
+// alle Bilder mit der Klasse 'blend' auswählen
 var images = document.querySelectorAll('.blend');
 
-// Fügen Sie jedem Bild einen Scroll-Event-Listener hinzu
+// jedem Bild einen Scroll-Event-Listener hinzufügen
 window.addEventListener('scroll', function() {
   images.forEach(function(image) {
-    // Überprüfen Sie, ob das Bild im Viewport sichtbar ist
+    // Überprüfen, ob das Bild im Viewport sichtbar ist
     var rect = image.getBoundingClientRect();
     var isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
 
-    // Fügen Sie die 'visible'-Klasse hinzu, wenn das Bild sichtbar ist, und entfernen Sie sie, wenn es nicht sichtbar ist
+    // die 'visible'-Klasse hinzufügen, wenn das Bild sichtbar ist, und sie entfernen, wenn es nicht sichtbar ist
     if (isVisible) {
       image.classList.add('visible');
     } else {
@@ -236,17 +236,17 @@ window.addEventListener('scroll', function() {
 
 
 
-// Wählen Sie alle Elemente mit der Klasse 'scroll-reveal-right' aus
+// alle Elemente mit der Klasse 'scroll-reveal-right' auswählen
 var elements = document.querySelectorAll('.scroll-reveal-right');
 
-// Fügen Sie jedem Element einen Scroll-Event-Listener hinzu
+// jedem Element einen Scroll-Event-Listener hinzufügen
 window.addEventListener('scroll', function() {
   elements.forEach(function(element) {
-    // Überprüfen Sie, ob das Element im Viewport sichtbar ist
+    // Überprüfen, ob das Element im Viewport sichtbar ist
     var rect = element.getBoundingClientRect();
     var isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
 
-    // Fügen Sie die 'visible'-Klasse hinzu, wenn das Element sichtbar ist, und entfernen Sie sie, wenn es nicht sichtbar ist
+    // die 'visible'-Klasse hinzufügen, wenn das Element sichtbar ist, und sie entfernen, wenn es nicht sichtbar ist
     if (isVisible) {
       element.classList.add('visible');
     } else {
